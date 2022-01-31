@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" style="object-fit: cover;" href="%PUBLIC_URL%/logoschool.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -14,7 +15,45 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="%PUBLIC_URL%/assets/css/flaticon.css" rel="stylesheet" type="text/css">
+  <link href="%PUBLIC_URL%/assets/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+  <link href="%PUBLIC_URL%/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/css/style.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/css/plugins.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/css/maincolors.css" rel="stylesheet">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/layerslider.css">
+  <link rel="stylesheet" id="switcher-css" type="text/css" href="%PUBLIC_URL%/assets/css/switcher.css" media="all" />
+  <link rel="alternate stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/maincolors.css" title="maincolors" media="all" />
+  <link rel="alternate stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/kindergarten.css" title="kindergarten" media="all" />
+  <link rel="alternate stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/playtime.css" title="playtime" media="all" />
+  <link rel="alternate stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/preschool.css" title="preschool" media="all" />
+      <!-- <link href="%PUBLIC_URL%/assets/css/bootstrap.css" rel="stylesheet"> -->
+  
+   
+    <link href="%PUBLIC_URL%/assets/css/fontawesome-all.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76370337-3"></script>
+  <!-- <link href="%PUBLIC_URL%/assets/css/styles1.css" rel="stylesheet"> -->
+      <!-- <link href="%PUBLIC_URL%/assets/css/styles.css" rel="stylesheet"> -->
+    
+    
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-76370337-3');
+    </script>
+    
+    
+    
+  
+    
+
+
+
+
+    <link rel="icon" href="%PUBLIC_URL%/assets/images/favicon.png">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,9 +63,58 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <!-- <title>React App</title> -->
+    
   </head>
-  <body>
+
+  <script src="%PUBLIC_URL%/assets/js/jquery.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/bootstrap.min.js"></script> 
+  <script src="%PUBLIC_URL%/assets/js/custom.js"></script>
+<script src="%PUBLIC_URL%/assets/js/plugins.js"></script>
+<script src="%PUBLIC_URL%/assets/js/prefixfree.min.js"></script>
+<script src="%PUBLIC_URL%/assets/js/bootstrap-select.js"></script>
+<script src="%PUBLIC_URL%/assets/js/dmss.js"></script>
+<script src="%PUBLIC_URL%/assets/js/extrastyles.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7ZJPV8">
+
+ <script src="%PUBLIC_URL%/assets/js/counter.js"></script>
+<script src="%PUBLIC_URL%/assets/js/map.js"></script>
+<script src="%PUBLIC_URL%/assets/js/greensock.js"></script>
+<script src="%PUBLIC_URL%/assets/js/layerslider.transitions.js"></script>
+<script src="%PUBLIC_URL%/assets/js/layerslider.kreaturamedia.jquery.js"></script>
+<script src="%PUBLIC_URL%/assets/js/layerslider.load.js"></script>
+<script src="%PUBLIC_URL%/assets/js/analytics.js"></script>
+
+
+
+
+<!-- ป้องกัน การคลิกเมาส์ / คีย์ลัดคีบอร์ด -->
+  <script>
+$(document).keydown(function (event) {
+  if (event.keyCode == 123) { // ป้องกัน F12
+      return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // ป้องกัน Ctrl+Shift+I        
+      return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 74) { // ป้องกัน Ctrl+Shift+J        
+      return false;
+  } 
+  else if (event.ctrlKey &&  event.keyCode == 85) { // ป้องกัน Ctrl+U      
+      return false;
+  }
+  
+
+});
+// ป้องกัน mouse
+window.oncontextmenu = ()=>{
+  return true;
+
+}
+</script>
+
+  <body data-spy="scroll" data-target=".fixed-top">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
